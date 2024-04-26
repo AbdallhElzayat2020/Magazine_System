@@ -13,14 +13,12 @@ return new class extends Migration
     {
         Schema::create('post_translations', function (Blueprint $table) {
             $table->id();
-            $table->integer('post_id')->unsigned();
             $table->string('locale')->index();
-            $table->string('image')->nullable();
-            $table->string('title');
-            $table->text('content');
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
             $table->text('smallDescription');
             $table->unique(['post_id', 'locale']);
-            $table->foreign('post_id')->references('id')->on('posts')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('post_id')->references('id')->on('posts')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 
