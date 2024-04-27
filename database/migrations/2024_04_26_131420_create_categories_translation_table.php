@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('categories_translation', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('locale')->index();
+            $table->string('image')->nullable();
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
+            $table->unique(['category_id', 'locale']);
+            $table->foreignId('category_id')->references('id')->on('categories')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 

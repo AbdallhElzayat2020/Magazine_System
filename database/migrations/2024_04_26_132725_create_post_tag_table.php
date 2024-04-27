@@ -11,10 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('post_tag', function (Blueprint $table) {
+            // $x = 2;
+            // $y = 2;
+            // echo $x;
+            // echo '<br>';
+            // echo $y;
             $table->id();
-            $table->string('image')->nullable();
-            $table->integer('parent')->nullable();
+            $table->integer('post_id');
+            $table->integer('tag_id');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -25,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('post_tag');
     }
 };
