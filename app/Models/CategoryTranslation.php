@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class CategoryTranslation extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+
+    protected $fillable = [
+        'id', 'image', 'parent', 'created_at', 'updated_at', 'deleted_at',
+    ];
 }
