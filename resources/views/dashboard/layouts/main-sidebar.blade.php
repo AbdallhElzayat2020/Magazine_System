@@ -3,7 +3,7 @@
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('settings') }}"><i class="icon-speedometer"></i>
-                    {{ __('words.home') }}
+                    {{ __('words.dashboard') }}
                 </a>
             </li>
 
