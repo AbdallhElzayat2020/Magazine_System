@@ -20,5 +20,8 @@ Route::get('/', function () {
 Route::prefix('dashboard')->group(function () {
     Route::get('/settings', function () {
         return view('dashboard.setting');
-    })->name('dashboard.settings');
+    })->name('settings');
+    Route::post('/settings/update', function () {
+        return view('');
+    })->name('setting.update');
 });

@@ -10,13 +10,12 @@
 
     </ol>
 
-
     {{-- {{dd($setting)}} --}}
 
     <div class="container-fluid">
 
         <div class="animated fadeIn">
-            <form action="{{ Route('dashboard.settings.update', $setting) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ Route('dashboard.setting.update', $setting) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     @if ($errors->any())
@@ -71,22 +70,17 @@
                                 <input type="text" name="email" class="form-control"
                                     placeholder="{{ __('words.email') }}" value="{{ $setting->email }}">
                             </div>
-
                         </div>
-
-
-
-
                         <div class="card">
                             <div class="card-header">
                                 <strong>{{ __('words.translations') }}</strong>
                             </div>
                             <div class="card-block">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-
                                     @foreach (config('app.languages') as $key => $lang)
                                         <li class="nav-item">
-                                            <a class="nav-link @if ($loop->index == 0) active @endif"
+                                            <a class="nav-link
+                                            @if ($loop->index == 0) active @endif"
                                                 id="home-tab" data-toggle="tab" href="#{{ $key }}" role="tab"
                                                 aria-controls="home" aria-selected="true">{{ $lang }}</a>
                                         </li>
