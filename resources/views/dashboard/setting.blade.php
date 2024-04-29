@@ -98,7 +98,6 @@
                                                     class="form-control" placeholder="{{ __('words.email') }}"
                                                     value="{{ $setting->translate($key)->title }}">
                                             </div>
-
                                             <div class="form-group col-md-12">
                                                 <label>{{ __('words.content') }}</label>
                                                 <textarea name="{{ $key }}[content]" class="form-control" cols="30" rows="10">{{ $setting->translate($key)->content }}</textarea>
