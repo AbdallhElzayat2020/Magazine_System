@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Dashboard\SettingController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +10,9 @@ use App\Http\Controllers\Dashboard\SettingController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+use App\Http\Controllers\Dashboard\SettingController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard.layouts.index');

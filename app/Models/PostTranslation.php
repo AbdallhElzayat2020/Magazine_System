@@ -10,6 +10,6 @@ class PostTranslation extends Model
     use HasFactory;
 
     public $timestamps = false;
+    protected $fillable = ['title', 'content', 'smallDescription'];
 
-    protected $fillable = ['id', 'image', 'category_id', 'created_at', 'updated_at', 'deleted_at'];
 }

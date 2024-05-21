@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Models;
+    namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Astrotomic\Translatable\Translatable;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+    use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Database\Eloquent\Factories\HasFactory;
+    use Astrotomic\Translatable\Translatable;
+    use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
-class Category extends Model implements TranslatableContract
-{
-    use HasFactory ,Translatable;
+    class Category extends Model implements TranslatableContract
+    {
+        use HasFactory , Translatable;
 
-    public $translatedAttributes = ['title', 'content'];
+        public $translatedAttributes = [ 'title' , 'content' ];
 
-    protected $fillable = [
-        'id', 'image', 'parent', 'created_at', 'updated_at', 'deleted_at',
-    ];
-
-}
+        protected $fillable = [
+            'image' , 'parent' ,
+        ];
+    }

@@ -12,6 +12,6 @@ class CategoryTranslation extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'id', 'image', 'parent', 'created_at', 'updated_at', 'deleted_at',
+        'title' , 'content' ,
     ];
 }

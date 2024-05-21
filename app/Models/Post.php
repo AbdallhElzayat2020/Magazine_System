@@ -13,5 +13,5 @@ class Post extends Model implements TranslatableContract
 
     public $translatedAttributes = ['title', 'content', 'smallDescription'];
 
-    protected $fillable = ['id', 'image', 'category_id', 'created_at', 'updated_at', 'deleted_at'];
+    protected $fillable = ['image'];
 }

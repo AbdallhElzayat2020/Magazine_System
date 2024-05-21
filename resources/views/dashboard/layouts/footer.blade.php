@@ -1,14 +1,8 @@
 <footer class="footer">
     <span class="text-left">
-        <script>
-            function displayCurrentYear() {
-                const year = new Date().getFullYear();
-                document.write(year);
-            }
-        </script>
-
+        <a href="http://coreui.io">CoreUI</a> &copy; 2016 creativeLabs.
     </span>
     <span class="pull-right">
-        Developed By <a href="#">Abdallh Elzayat</a>
+        Powered by <a href="http://coreui.io">CoreUI</a>
     </span>
 </footer>

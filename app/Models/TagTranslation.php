@@ -11,5 +11,5 @@ class TagTranslation extends Model
 
     public $timestamps = false;
 
-    protected $fillable = ['id', 'created_at', 'updated_at', 'deleted_at'];
+    protected $fillable = ['',''];
 }

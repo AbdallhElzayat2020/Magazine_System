@@ -13,5 +13,4 @@ class Tag extends Model implements TranslatableContract
 
     public $translatedAttributes = ['title'];
 
-    protected $fillable = ['id', 'created_at', 'updated_at', 'deleted_at'];
 }

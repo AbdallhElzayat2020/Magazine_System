@@ -7,6 +7,15 @@
                 <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
             </li>
 
+            <!--<li class="nav-item p-x-1">
+                <a class="nav-link" href="#">داشبورد</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" href="#">Settings</a>
+            </li>-->
         </ul>
         <ul class="nav navbar-nav pull-left hidden-md-down">
             <li class="nav-item">
@@ -22,8 +31,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
                     aria-haspopup="true" aria-expanded="false">
-                    <img src="{{ asset('assetsAdmin/img/avatars/6.jpg') }}" class="img-avatar"
-                        alt="admin@bootstrapmaster.com">
+                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     <span class="hidden-md-down">مدیر</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
@@ -32,6 +40,7 @@
                     </div>
                     <a class="dropdown-item" href="#"><i class="fa fa-user"></i> پروفایل</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> تنظیمات</a>
+                    <!--<a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="tag tag-default">42</span></a>-->
                     <div class="divider"></div>
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> خروج</a>
                 </div>

@@ -13,5 +13,6 @@ class Setting extends Model implements TranslatableContract
 
     public $translatedAttributes = ['title', 'content', 'address'];
 
-    protected $fillable = ['id', 'logo', 'favicon', 'facebook', 'instagram', 'phone', 'email', 'created_at', 'updated_at', 'deleted_at'];
+    protected $fillable = ['logo','favicon','facebook','instagram','phone','email'];
+
 }
